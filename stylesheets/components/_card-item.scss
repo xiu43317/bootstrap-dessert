@@ -1,0 +1,32 @@
+.item-detail {
+    display: flex;
+    flex-direction: column;
+    .card-img {
+        height: 315px;
+        position: relative;
+        .title {
+            position: absolute;
+            background-color: rgba(theme-color("primary"), 1);
+            left: 20px;
+            top: 0;
+            padding: 15px 10px;
+            letter-spacing: 5px;
+        }
+        .icon-display {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+        }
+    }
+    .item-price{
+        border: 1px solid $primary-200;
+        text-align: center;
+        .name,.price{
+            padding:15px 0;
+            font-size: $font-size-lg;
+        }
+        .name{
+            border-right: 1px solid $primary-200;
+        }
+    }
+}

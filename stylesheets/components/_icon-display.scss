@@ -1,0 +1,15 @@
+.icon-check {
+    cursor: pointer;
+    font-size: 24px;
+    .favorate, .icon-hidden{
+        display: none;
+    }
+    .favorate:checked{
+        & ~ .icon-show{
+            display: none;
+        }
+        & ~ .icon-hidden{
+            display: inline;
+        }
+    }
+}

@@ -1,0 +1,129 @@
+.navbar {
+    .fa-shopping-cart {
+        font-size: 20px;
+    }
+}
+//position
+.icon-prepend {
+    position: absolute;
+    font-size: 20px;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+.input-relative {
+    position: relative;
+}
+//align-center
+.xyalign-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+//change checkbox size
+.checkbox-big {
+    position: absolute;
+    top: -1.5px;
+    width: 18px;
+    height: 18px;
+}
+// tick
+.tick-circle {
+    font-size: 20px;
+    background-color: $primary-200;
+    border-radius: 50%;
+}
+// connect-line{
+.line::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: $primary;
+    z-index: -1;
+}
+// circle
+.circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: $primary-200 1px solid;
+    background-color: $primary;
+    z-index: 2;
+    position: relative;
+}
+.circle-fill::after{
+    content: "";
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 14px;
+    height: 14px;
+    background-color: $primary-200;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 10;
+}
+.circle-tick{
+    width: 20px;
+    height: 20px;
+    font-size: 14px;
+    border-radius: 50%;
+    background-color: $primary-200;
+    color: $primary;
+    z-index: 2;
+    position: relative;
+}
+.fa-check{
+    position: absolute;
+    left: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+//circle-line
+.circle-line::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: $primary-200;
+    z-index: 1;
+}
+// item-input
+.item-input{
+    height: 48px;
+    padding-left: 18px;
+}
+.item-btn{
+    width: 48px;
+}
+// link-hover
+.link-primary-hover{
+    display: block;
+    text-align: center;
+    background-color: $primary;
+    color: $primary-200;
+    border: 1px solid $primary-200;
+    border-radius: 0%;
+    &:hover{
+        color: $primary-500;
+        text-decoration: none;
+    }
+}
+.link-primary-light-hover{
+    display: block;
+    text-align: center;
+    background-color: $primary-200;
+    color: $primary;
+    border: 1px solid $primary-200;
+    border-radius: 0%;
+    &:hover{
+        text-decoration: none;
+    }
+}

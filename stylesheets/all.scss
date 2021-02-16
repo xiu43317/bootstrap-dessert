@@ -1,0 +1,17 @@
+// 必要載入的
+@import "../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+//自己客製化組件
+@import "./components/custom";
+@import "./components/card-item";
+@import "./components/icon-display";
+@import "./components/cart-item";
+
+//不同頁面
+@import "./components/header";
+@import "./components/index";
+
+//共用元件
+@import "./components/utilities";

@@ -1,0 +1,51 @@
+// background
+.bg-cover{
+    background-size: cover;
+    background-position: center center;
+}
+// btn
+.btn-gray {
+    @include button-variant($primary-200, $primary-200);
+}
+.btn-brand-light{
+    @include button-variant(white,$primary-200);
+}
+.btn-accent {
+    @include button-variant(rgba(theme-color("accent"), 1), rgba(theme-color("accent"), 1));
+}
+//bg
+.bg-primary-lighter {
+    background-color: $primary-200;
+  }
+//text
+.text-primary-light{
+    color: $primary-500;
+}
+.text-primary-lighter{
+    color: $primary-200;
+}
+// border
+.border-primary-lighter{
+    border: 1px solid $primary-200;
+    border-radius: 0%;
+}
+// writing mode
+.writing-vertical{
+    writing-mode: vertical-rl;
+}
+
+.writing-md-vertical {
+    @include media-breakpoint-up(md) {
+      writing-mode: vertical-rl;
+    }
+  }
+  // input outline
+  .no-outline{
+      outline: none;
+      border: none;
+  }
+  // unstyle
+  .no-style{
+      list-style: none;
+      padding-left: 0;
+  }
