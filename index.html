@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta property="og:title" content="六角甜點工坊-首頁"/>
+    <meta property="og:title" content="六角甜點工坊-首頁" />
     <meta property="og:description" content="使用 Bootstrap 結合 Sass 結束這回合吧" />
     <meta property="og:site_name" content="六角學院" />
     <meta property="og:locale" content="zh_TW" />
@@ -14,9 +14,6 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="./stylesheets/all.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
     <title>六角甜點工坊-首頁</title>
 </head>
 
@@ -54,7 +51,7 @@
             <div class="header-main-image bg-cover"
                 style="background-image: url(https://images.unsplash.com/photo-1473256599800-b48c7c88cd7e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ae0d68ab0db4ee79bdce92722b31112b&auto=format&fit=crop&w=925&q=80)">
             </div>
-            <div class="row intro-area justify-content-center">
+            <div class="row intro-area justify-content-center no-gutters">
                 <div class="col-md-10">
                     <div class="row no-gutters">
                         <a href="#" class="col-4 intro active">
@@ -91,7 +88,7 @@
     </div>
     <!-- 為什麼選擇了甜點 -->
     <section class="section my-md-9">
-        <div class="row justify-content-center d-md-none py-5">
+        <div class="row justify-content-center d-md-none py-5 no-gutters">
             <div class="col-6">
                 <img src="./images/sm-為什麼選擇了做甜點.svg" alt="">
             </div>
@@ -120,9 +117,11 @@
     </section>
     <!-- 為什麼一定要吃甜點 -->
     <section class="section my-md-9">
-        <div class="row justify-content-center d-md-none py-5">
-            <div class="col-6">
-                <img src="./images/sm-為什麼一定要吃甜點.svg" alt="">
+        <div class="container">
+            <div class="row justify-content-center d-md-none no-gutters">
+                <div class="col-6">
+                    <img class="my-5" src="./images/sm-為什麼一定要吃甜點.svg" alt="">
+                </div>
             </div>
         </div>
         <div class="bg-primary-lighter">
@@ -245,7 +244,7 @@
                         <input type="email" class="no-outline form-control py-5 pl-6 shadow-none"
                             aria-label="Recipient's username" aria-describedby="basic-addon2">
                         <div class="input-group-append">
-                            <a href="#" class="btn btn-accent d-flex align-items-center px-4 rounded-0"><i
+                            <a href="#" class="btn btn-accent d-flex align-items-center px-4"><i
                                     class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
@@ -255,7 +254,7 @@
     </section>
     <!-- 註腳 -->
     <div class="footer bg-primary-lighter py-4">
-        <div class="container">
+        <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-md-5 d-flex flex-column justify-content-between">
                     <div>
@@ -268,13 +267,13 @@
                     </ul>
                 </div>
                 <div class="col-md-5 text-right d-none d-md-block">
-                        <img src="./images/sm-今天是個吃甜點的好日子.svg" width="60" alt="">   
+                    <img src="./images/sm-今天是個吃甜點的好日子.svg" width="60" alt="">
                 </div>
             </div>
             <div class="row justify-content-center mt-4">
-                <div class="col-md-5 d-flex mb-2">  
-                        <i class="fab fa-twitter-square fa-2x mr-1"></i>
-                        <i class="fab fa-facebook-square fa-2x"></i>
+                <div class="col-md-5 d-flex mb-2">
+                    <i class="fab fa-twitter-square fa-2x mr-1"></i>
+                    <i class="fab fa-facebook-square fa-2x"></i>
                 </div>
                 <div class="col-md-5 text-left text-md-right">
                     © 2018 Sweetaste* All Rights Reserved
@@ -282,6 +281,9 @@
             </div>
         </div>
     </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
         integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
         crossorigin="anonymous"></script>
